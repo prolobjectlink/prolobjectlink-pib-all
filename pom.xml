@@ -78,14 +78,6 @@
 		<maven.compiler.target>1.5</maven.compiler.target>
 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.logicware</groupId>
-			<artifactId>prolobjectlink-jpe</artifactId>
-			<version>[1.0.0, )</version>
-		</dependency>
-	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
