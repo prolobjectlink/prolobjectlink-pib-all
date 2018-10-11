@@ -7,7 +7,6 @@
   <name>prolobjectlink</name>
   <description>Parent</description>
   
-  
   <url>http://www.logicware.org</url>
 	<inceptionYear>2012</inceptionYear>
 
@@ -68,7 +67,6 @@
 			<url>http://maven.delnet.cu/repository/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
-
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -322,7 +320,5 @@
 			</plugin>
 		</plugins>
 	</reporting>
-
-  
   
 </project>
