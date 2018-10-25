@@ -9,12 +9,10 @@ stages:
 - test
 - build
 
-myapplication_test:
 stage: test
 script:
 - mvn clean test -B
 
-myapplication_build:
 stage: build
 script:
 - mvn package -B -Dmaven.test.skip
