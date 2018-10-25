@@ -5,17 +5,39 @@ cache:
   paths:
     - /root/.m2/repository/
 
-stages:
-- test
-- build
+# This will only validate and compile stuff and run e.g. maven-enforcer-plugin. 
+# Because some enforcer rules might check dependency convergence and class duplications
+# we use `test-compile` here instead of `validate`, so the correct classpath is picked up.
+.validate: &validate
+  stage: build
+  script:
+    - 'mvn clean compile'
 
-stage: test
-script:
-- mvn clean test -B
+# For merge requests do not `deploy` but only run `verify`.
+# See https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+.verify: &verify
+  stage: test
+  script:
+    - 'mvn clean test'
+  except:
+    - master
 
-stage: build
-script:
-- mvn package -B -Dmaven.test.skip
-artifacts:
-paths:
-- target/myapplication-1.0.0.jar
+# Validate merge requests using JDK7
+validate:jdk7:
+  <<: *validate
+  image: maven:3.3.9-jdk-7
+
+# Validate merge requests using JDK8
+validate:jdk8:
+  <<: *validate
+  image: maven:3.3.9-jdk-8
+
+# Verify merge requests using JDK7
+verify:jdk7:
+  <<: *verify
+  image: maven:3.3.9-jdk-7
+
+# Verify merge requests using JDK8
+verify:jdk8:
+  <<: *verify
+  image: maven:3.3.9-jdk-8
