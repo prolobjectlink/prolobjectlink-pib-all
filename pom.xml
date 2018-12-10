@@ -1,13 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.logicware</groupId>
-  <artifactId>prolobjectlink</artifactId>
-  <version>1.0.0</version>
-  <packaging>pom</packaging>
-  <name>prolobjectlink</name>
-  <description>Parent</description>
-  
-  <url>http://www.logicware.org</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.logicware</groupId>
+	<artifactId>prolobjectlink</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>prolobjectlink</name>
+	<description>Prolobjectlink Parent</description>
+
+	<url>http://www.logicware.org</url>
 	<inceptionYear>2012</inceptionYear>
 
 	<organization>
@@ -19,30 +21,14 @@
 		<license>
 			<name>Apache 2</name>
 			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-                        <distribution>repo</distribution>
+			<distribution>repo</distribution>
 		</license>
 	</licenses>
 
-	<developers>
-		<developer>
-			<id>jzalacain</id>
-			<name>Jose Zalacain</name>
-			<email>jzalacain@nauta.cu</email>
-			<organization>Logicware Project</organization>
-			<organizationUrl>http://www.logicware.org</organizationUrl>
-			<roles>
-				<role>architect</role>
-				<role>developer</role>
-				<role>founder</role>
-			</roles>
-			<timezone>-5</timezone>
-		</developer>
-	</developers>
-
 	<scm>
-		<developerConnection>scm:git:git@gitlab.delnet.cu:logicware/prolobjectlink-jpi.git</developerConnection>
-		<connection>scm:git:git@gitlab.delnet.cu:logicware/prolobjectlink-jpi.git</connection>
-		<url>http://gitlab.delnet.cu/logicware/prolobjectlink-jpi</url>
+		<developerConnection>scm:git:git@gitlab.delnet.cu:logicware/${project.name}.git</developerConnection>
+		<connection>scm:git:git@gitlab.delnet.cu:logicware/${project.name}.git</connection>
+		<url>http://gitlab.delnet.cu/logicware/${project.name}</url>
 		<tag>${project.name}-${project.version}</tag>
 	</scm>
 
@@ -67,6 +53,10 @@
 			<name>Internal Snapshot Repository</name>
 			<url>http://maven.delnet.cu/repository/snapshots/</url>
 		</snapshotRepository>
+		<site>
+			<id>website</id>
+			<url>dav:http://deploy.delnet.cu/webdav/sites/${project.name}</url>
+		</site>
 	</distributionManagement>
 
 	<properties>
@@ -78,6 +68,24 @@
 	</properties>
 
 	<build>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.6</version>
+					<dependencies>
+						<dependency>
+							<groupId>org.apache.maven.wagon</groupId>
+							<artifactId>wagon-webdav-jackrabbit</artifactId>
+							<version>3.2.0</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -85,17 +93,7 @@
 				<version>3.1</version>
 				<configuration>
 					<nohelp>true</nohelp>
-					<!-- <source>1.8</source> -->
-					<!-- <target>1.8</target> -->
 				</configuration>
-				<!-- <executions> -->
-				<!-- <execution> -->
-				<!-- <id>attach-javadocs</id> -->
-				<!-- <goals> -->
-				<!-- <goal>jar</goal> -->
-				<!-- </goals> -->
-				<!-- </execution> -->
-				<!-- </executions> -->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -110,19 +108,19 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- <plugin> -->
-			<!-- <groupId>org.apache.maven.plugins</groupId> -->
-			<!-- <artifactId>maven-javadoc-plugin</artifactId> -->
-			<!-- <version>3.0.0</version> -->
-			<!-- <executions> -->
-			<!-- <execution> -->
-			<!-- <id>attach-javadocs</id> -->
-			<!-- <goals> -->
-			<!-- <goal>jar</goal> -->
-			<!-- </goals> -->
-			<!-- </execution> -->
-			<!-- </executions> -->
-			<!-- </plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>license-maven-plugin</artifactId>
@@ -170,6 +168,25 @@
 						<configuration>
 							<outputDirectory>${project.reporting.outputDirectory}</outputDirectory>
 						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<descriptors>
+						<descriptor>src/assembly/dist.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>create-archive</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
@@ -281,11 +298,11 @@
 					</reportSet>
 				</reportSets>
 			</plugin>
-			<!-- <plugin> -->
-			<!-- <groupId>org.apache.maven.plugins</groupId> -->
-			<!-- <artifactId>maven-javadoc-plugin</artifactId> -->
-			<!-- <version>2.10.4</version> -->
-			<!-- </plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.4</version>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
@@ -376,5 +393,5 @@
 			</plugin>
 		</plugins>
 	</reporting>
-  
+
 </project>
