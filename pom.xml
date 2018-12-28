@@ -58,22 +58,22 @@
 		<url>http://bugzilla.delnet.cu/</url>
 	</issueManagement>
 
-	<!-- <distributionManagement> -->
-	<!-- <repository> -->
-	<!-- <id>internal</id> -->
-	<!-- <name>Internal Release Repository</name> -->
-	<!-- <url>http://maven.delnet.cu/repository/internal/</url> -->
-	<!-- </repository> -->
-	<!-- <snapshotRepository> -->
-	<!-- <id>snapshots</id> -->
-	<!-- <name>Internal Snapshot Repository</name> -->
-	<!-- <url>http://maven.delnet.cu/repository/snapshots/</url> -->
-	<!-- </snapshotRepository> -->
-	<!-- <site> -->
-	<!-- <id>website</id> -->
-	<!-- <url>dav:http://deploy.delnet.cu/webdav/sites/${project.name}</url> -->
-	<!-- </site> -->
-	<!-- </distributionManagement> -->
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>http://maven.delnet.cu/repository/snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>internal</id>
+			<name>Internal Release Repository</name>
+			<url>http://maven.delnet.cu/repository/internal/</url>
+		</repository>
+		<site>
+			<id>website</id>
+			<url>dav:http://deploy.delnet.cu/webdav/sites/${project.name}</url>
+		</site>
+	</distributionManagement>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
