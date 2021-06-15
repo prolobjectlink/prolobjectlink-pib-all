@@ -1,3 +1,13 @@
 io.github.prolobjectlink.prolog
-io.github.prolobjectlink.prolog.interprolog
+io.github.prolobjectlink.prolog.jiprolog
 io.github.prolobjectlink.prolog.jpl
+io.github.prolobjectlink.prolog.jpl.swi
+io.github.prolobjectlink.prolog.jpl.yap
+io.github.prolobjectlink.prolog.jpl7
+io.github.prolobjectlink.prolog.jtrolog
+io.github.prolobjectlink.prolog.tuprolog
+jTrolog.engine
+jTrolog.errors
+jTrolog.lib
+jTrolog.parser
+jTrolog.terms
