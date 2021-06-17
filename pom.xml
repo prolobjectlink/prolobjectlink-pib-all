@@ -114,9 +114,10 @@
 
 	<modules>
 		<!-- <module>../prolobjectlink-jee</module> -->
+
 		<module>../prolobjectlink-jpi</module>
 		<!-- <module>../prolobjectlink-jpi-eclipse</module> -->
-		<!-- <module>../prolobjectlink-jpi-ip</module> -->
+		<module>../prolobjectlink-jpi-ip</module>
 		<!-- <module>../prolobjectlink-jpi-ip-xsb</module> -->
 		<!-- <module>../prolobjectlink-jpi-jekpro</module> -->
 		<module>../prolobjectlink-jpi-jiprolog</module>
@@ -129,6 +130,29 @@
 		<module>../prolobjectlink-jpi-jtrolog</module>
 		<module>../prolobjectlink-jpi-tuprolog</module>
 		<!-- <module>../prolobjectlink-jpi-zprolog</module> -->
+
+		<module>../prolobjectlink-jpp</module>
+
+		<module>../prolobjectlink-jpp-javax</module>
+		<!-- <module>../prolobjectlink-jps-grizzly</module> -->
+		<!-- <module>../prolobjectlink-jps-undertow</module> -->
+
+		<!-- <module>../prolobjectlink-jpx-jlog</module> -->
+		<!-- <module>../prolobjectlink-jpx-jpl-swi</module> -->
+		<!-- <module>../prolobjectlink-jpx-jpl-yap</module> -->
+		<!-- <module>../prolobjectlink-jpx-jpl7-swi7</module> -->
+		<!-- <module>../prolobjectlink-jpx-jtrolog</module> -->
+		<!-- <module>../prolobjectlink-jpx-tuprolog</module> -->
+
+		<!-- <module>../prolobjectlink-pas-linux</module> -->
+		<!-- <module>../prolobjectlink-pas-linux-x86</module> -->
+		<!-- <module>../prolobjectlink-pas-linux-x86-x64</module> -->
+		<!-- <module>../prolobjectlink-pas-macosx</module> -->
+		<!-- <module>../prolobjectlink-pas-macosx-x86</module> -->
+		<!-- <module>../prolobjectlink-pas-macosx-x86-x64</module> -->
+		<!-- <module>../prolobjectlink-pas-win32</module> -->
+		<!-- <module>../prolobjectlink-pas-win32-x86</module> -->
+		<!-- <module>../prolobjectlink-pas-win32-x86-x64</module> -->
 	</modules>
 
 	<build>
