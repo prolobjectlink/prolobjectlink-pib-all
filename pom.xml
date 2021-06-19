@@ -6,7 +6,7 @@
 	<artifactId>prolobjectlink-all</artifactId>
 	<version>1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Prolobjectlink Project</name>
+	<name>prolobjectlink-all</name>
 	<description>Prolobjectlink Project Parent</description>
 
 	<url>https://github.com/prolobjectlink/${project.name}</url>
@@ -114,7 +114,10 @@
 
 	<modules>
 
+		<!-- Prolobjectlink Java Prolog Interface -->
 		<!-- <module>../prolobjectlink-cpi</module> -->
+
+		<!-- Prolobjectlink Java Prolog Interface -->
 		<module>../prolobjectlink-jpi</module>
 		<!-- <module>../prolobjectlink-jpi-eclipse</module> -->
 		<module>../prolobjectlink-jpi-ip</module>
@@ -126,17 +129,18 @@
 		<module>../prolobjectlink-jpi-jpl-swi</module>
 		<module>../prolobjectlink-jpi-jpl-yap</module>
 		<module>../prolobjectlink-jpi-jpl7</module>
-		<!-- <module>../prolobjectlink-jpi-jpl7-swi7</module> -->
 		<module>../prolobjectlink-jpi-jtrolog</module>
 		<module>../prolobjectlink-jpi-tuprolog</module>
 		<!-- <module>../prolobjectlink-jpi-zprolog</module> -->
 
+		<!-- Prolobjectlink Java Persistence Provider -->
 		<module>../prolobjectlink-jpp</module>
 		<module>../prolobjectlink-jpp-jpl-swi</module>
 		<module>../prolobjectlink-jpp-jpl-yap</module>
-		<!-- <module>../prolobjectlink-jpp-jpl7-swi7</module> -->
 		<module>../prolobjectlink-jpp-jtrolog</module>
 		<module>../prolobjectlink-jpp-tuprolog</module>
+
+		<!-- Prolobjectlink Access Data Object -->
 		<module>../prolobjectlink-pado-linux</module>
 		<module>../prolobjectlink-pado-linux-x86</module>
 		<module>../prolobjectlink-pado-linux-x86-x64</module>
@@ -147,6 +151,15 @@
 		<module>../prolobjectlink-pado-win32-x86</module>
 		<module>../prolobjectlink-pado-win32-x86-x64</module>
 
+		<!-- Prolobjectlink Interface Benchmark -->
+		<module>../prolobjectlink-pib</module>
+		<module>../prolobjectlink-pib-jiprolog</module>
+		<module>../prolobjectlink-pib-jlog</module>
+		<module>../prolobjectlink-pib-jpl-swi</module>
+		<module>../prolobjectlink-pib-jpl-yap</module>
+		<module>../prolobjectlink-pib-jtrolog</module>
+		<module>../prolobjectlink-pib-suite</module>
+		<module>../prolobjectlink-pib-tuprolog</module>
 	</modules>
 
 	<build>
