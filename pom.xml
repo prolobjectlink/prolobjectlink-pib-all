@@ -158,8 +158,19 @@
 		<module>../prolobjectlink-pib-jpl-swi</module>
 		<module>../prolobjectlink-pib-jpl-yap</module>
 		<module>../prolobjectlink-pib-jtrolog</module>
-		<module>../prolobjectlink-pib-suite</module>
 		<module>../prolobjectlink-pib-tuprolog</module>
+
+		<!-- Prolobjectlink Interface Benchmark Suite -->
+		<module>../prolobjectlink-pib-suite</module>
+		<module>../prolobjectlink-pib-suite-linux</module>
+		<module>../prolobjectlink-pib-suite-linux-x86</module>
+		<module>../prolobjectlink-pib-suite-linux-x86-x64</module>
+		<module>../prolobjectlink-pib-suite-macosx</module>
+		<module>../prolobjectlink-pib-suite-macosx-x86</module>
+		<module>../prolobjectlink-pib-suite-macosx-x86-x64</module>
+		<module>../prolobjectlink-pib-suite-win32</module>
+		<module>../prolobjectlink-pib-suite-win32-x86</module>
+		<module>../prolobjectlink-pib-suite-win32-x86-x64</module>
 	</modules>
 
 	<build>
