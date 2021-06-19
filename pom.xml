@@ -113,10 +113,8 @@
 	</properties>
 
 	<modules>
-		<module>../prolobjectlink-cpi</module>
-		
-		<!-- <module>../prolobjectlink-jee</module> -->
 
+		<!-- <module>../prolobjectlink-cpi</module> -->
 		<module>../prolobjectlink-jpi</module>
 		<!-- <module>../prolobjectlink-jpi-eclipse</module> -->
 		<module>../prolobjectlink-jpi-ip</module>
@@ -134,6 +132,21 @@
 		<!-- <module>../prolobjectlink-jpi-zprolog</module> -->
 
 		<module>../prolobjectlink-jpp</module>
+		<module>../prolobjectlink-jpp-jpl-swi</module>
+		<module>../prolobjectlink-jpp-jpl-yap</module>
+		<!-- <module>../prolobjectlink-jpp-jpl7-swi7</module> -->
+		<module>../prolobjectlink-jpp-jtrolog</module>
+		<module>../prolobjectlink-jpp-tuprolog</module>
+		<module>../prolobjectlink-pado-linux</module>
+		<module>../prolobjectlink-pado-linux-x86</module>
+		<module>../prolobjectlink-pado-linux-x86-x64</module>
+		<module>../prolobjectlink-pado-macosx</module>
+		<module>../prolobjectlink-pado-macosx-x86</module>
+		<module>../prolobjectlink-pado-macosx-x86-x64</module>
+		<module>../prolobjectlink-pado-win32</module>
+		<module>../prolobjectlink-pado-win32-x86</module>
+		<module>../prolobjectlink-pado-win32-x86-x64</module>
+
 	</modules>
 
 	<build>
