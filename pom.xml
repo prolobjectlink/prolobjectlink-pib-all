@@ -114,8 +114,11 @@
 
 	<modules>
 
-		<!-- Prolobjectlink Java Prolog Interface -->
+		<!-- Prolobjectlink Common Prolog Interface -->
 		<!-- <module>../prolobjectlink-cpi</module> -->
+		
+		<!-- Java Prolog Enterprise -->
+		<module>../prolobjectlink-jpe</module>
 
 		<!-- Prolobjectlink Java Prolog Interface -->
 		<module>../prolobjectlink-jpi</module>
@@ -171,6 +174,7 @@
 		<module>../prolobjectlink-pib-suite-win32</module>
 		<module>../prolobjectlink-pib-suite-win32-x86</module>
 		<module>../prolobjectlink-pib-suite-win32-x86-x64</module>
+		<module>../prolobjectlink-jpe</module>
 	</modules>
 
 	<build>
