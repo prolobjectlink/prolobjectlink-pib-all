@@ -114,9 +114,6 @@
 
 	<modules>
 
-		<!-- Prolobjectlink Common Prolog Interface -->
-		<!-- <module>../prolobjectlink-cpi</module> -->
-
 		<!-- Java Prolog Enterprise -->
 		<!-- <module>../prolobjectlink-jpe</module> -->
 
