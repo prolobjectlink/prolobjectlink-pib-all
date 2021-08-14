@@ -123,7 +123,7 @@
 		<!-- <module>../prolobjectlink-jpi-ip</module> -->
 		<!-- <module>../prolobjectlink-jpi-ip-xsb</module> -->
 		<!-- <module>../prolobjectlink-jpi-jekpro</module> -->
-		<module>../prolobjectlink-jpi-jiprolog</module>
+		<!-- <module>../prolobjectlink-jpi-jiprolog</module> -->
 		<module>../prolobjectlink-jpi-jlog</module>
 		<module>../prolobjectlink-jpi-jpl</module>
 		<module>../prolobjectlink-jpi-jpl-swi</module>
@@ -131,7 +131,6 @@
 		<module>../prolobjectlink-jpi-jpl7</module>
 		<module>../prolobjectlink-jpi-jtrolog</module>
 		<module>../prolobjectlink-jpi-tuprolog</module>
-		<!-- <module>../prolobjectlink-jpi-zprolog</module> -->
 
 		<!-- Prolobjectlink Java Persistence Provider -->
 		<!-- <module>../prolobjectlink-jpp</module> -->
@@ -429,6 +428,7 @@
 			<plugin>
 				<groupId>org.apache.rat</groupId>
 				<artifactId>apache-rat-plugin</artifactId>
+				<version>0.13</version>
 				<executions>
 					<execution>
 						<phase>verify</phase>
