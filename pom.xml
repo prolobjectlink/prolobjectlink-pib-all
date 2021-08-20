@@ -151,13 +151,13 @@
 		<!-- <module>../prolobjectlink-kbs-win32-x86-x64</module> -->
 
 		<!-- Prolobjectlink Interface Benchmark -->
-		<!-- <module>../prolobjectlink-pib</module> -->
-		<!-- <module>../prolobjectlink-pib-jiprolog</module> -->
-		<!-- <module>../prolobjectlink-pib-jlog</module> -->
-		<!-- <module>../prolobjectlink-pib-jpl-swi</module> -->
-		<!-- <module>../prolobjectlink-pib-jpl-yap</module> -->
-		<!-- <module>../prolobjectlink-pib-jtrolog</module> -->
-		<!-- <module>../prolobjectlink-pib-tuprolog</module> -->
+		<module>../prolobjectlink-pib</module>
+		<module>../prolobjectlink-pib-jiprolog</module>
+		<module>../prolobjectlink-pib-jlog</module>
+		<module>../prolobjectlink-pib-jpl-swi</module>
+		<module>../prolobjectlink-pib-jpl-yap</module>
+		<module>../prolobjectlink-pib-jtrolog</module>
+		<module>../prolobjectlink-pib-tuprolog</module>
 
 		<!-- Prolobjectlink Interface Benchmark Suite -->
 		<!-- <module>../prolobjectlink-pib-suite</module> -->
