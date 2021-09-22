@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.prolobjectlink</groupId>
-	<artifactId>prolobjectlink-all</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<artifactId>prolobjectlink-jpp-all</artifactId>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>prolobjectlink-all</name>
+	<name>prolobjectlink-jpp-all</name>
 	<description>Prolobjectlink Project Parent</description>
 
 	<url>https://github.com/prolobjectlink/${project.name}</url>
@@ -114,30 +114,13 @@
 
 	<modules>
 
-		<!-- Java Prolog Enterprise -->
-		<!-- <module>../prolobjectlink-jpe</module> -->
-
-		<!-- Prolobjectlink Java Prolog Interface -->
-		<module>../prolobjectlink-jpi</module>
-		<!-- <module>../prolobjectlink-jpi-eclipse</module> -->
-		<!-- <module>../prolobjectlink-jpi-ip</module> -->
-		<!-- <module>../prolobjectlink-jpi-ip-xsb</module> -->
-		<!-- <module>../prolobjectlink-jpi-jekpro</module> -->
-		<!-- <module>../prolobjectlink-jpi-jiprolog</module> -->
-		<module>../prolobjectlink-jpi-jlog</module>
-		<module>../prolobjectlink-jpi-jpl</module>
-		<module>../prolobjectlink-jpi-jpl-swi</module>
-		<module>../prolobjectlink-jpi-jpl-yap</module>
-		<module>../prolobjectlink-jpi-jpl7</module>
-		<module>../prolobjectlink-jpi-jtrolog</module>
-		<module>../prolobjectlink-jpi-tuprolog</module>
-
 		<!-- Prolobjectlink Java Persistence Provider -->
-		<!-- <module>../prolobjectlink-jpp</module> -->
-		<!-- <module>../prolobjectlink-jpp-jpl-swi</module> -->
-		<!-- <module>../prolobjectlink-jpp-jpl-yap</module> -->
-		<!-- <module>../prolobjectlink-jpp-jtrolog</module> -->
-		<!-- <module>../prolobjectlink-jpp-tuprolog</module> -->
+		<module>../prolobjectlink-jpp</module>
+		<module>../prolobjectlink-jpp-jpl-swi</module>
+		<module>../prolobjectlink-jpp-jpl-yap</module>
+		<module>../prolobjectlink-jpp-jtrolog</module>
+		<module>../prolobjectlink-jpp-tuprolog</module>
+		<!-- <module>../prolobjectlink-jpp-jpl7-swi7</module> -->
 
 		<!-- Prolobjectlink Knowledge Base Server -->
 		<!-- <module>../prolobjectlink-kbs-linux</module> -->
@@ -150,26 +133,8 @@
 		<!-- <module>../prolobjectlink-kbs-win32-x86</module> -->
 		<!-- <module>../prolobjectlink-kbs-win32-x86-x64</module> -->
 
-		<!-- Prolobjectlink Interface Benchmark -->
-		<module>../prolobjectlink-pib</module>
-		<module>../prolobjectlink-pib-jiprolog</module>
-		<module>../prolobjectlink-pib-jlog</module>
-		<module>../prolobjectlink-pib-jpl-swi</module>
-		<module>../prolobjectlink-pib-jpl-yap</module>
-		<module>../prolobjectlink-pib-jtrolog</module>
-		<module>../prolobjectlink-pib-tuprolog</module>
 
-		<!-- Prolobjectlink Interface Benchmark Suite -->
-		<!-- <module>../prolobjectlink-pib-suite</module> -->
-		<!-- <module>../prolobjectlink-pib-suite-linux</module> -->
-		<!-- <module>../prolobjectlink-pib-suite-linux-x86</module> -->
-		<!-- <module>../prolobjectlink-pib-suite-linux-x86-x64</module> -->
-		<!-- <module>../prolobjectlink-pib-suite-macosx</module> -->
-		<!-- <module>../prolobjectlink-pib-suite-macosx-x86</module> -->
-		<!-- <module>../prolobjectlink-pib-suite-macosx-x86-x64</module> -->
-		<!-- <module>../prolobjectlink-pib-suite-win32</module> -->
-		<!-- <module>../prolobjectlink-pib-suite-win32-x86</module> -->
-		<!-- <module>../prolobjectlink-pib-suite-win32-x86-x64</module> -->
+
 	</modules>
 
 	<build>
