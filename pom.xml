@@ -201,7 +201,7 @@
 					<acceptPomPackaging>true</acceptPomPackaging>
 					<licenseName>mit</licenseName>
 					<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
-					<roots>
+					<roots><root>src/assembly</root><root>src/changes</root>
 						<root>src/main</root>
 						<root>src/test</root>
 						<root>src/site</root>
